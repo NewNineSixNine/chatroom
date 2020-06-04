@@ -5,7 +5,7 @@
         <div class="useImg">
           <img src="../assets/logo.png" class="userurl">
         </div>
-        <el-menu default-active="1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse" background-color="#545c64"
+        <el-menu :default-active="icon[1].index" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse" background-color="#000"
         text-color="#fff"
         active-text-color="#fff"
         :router="true">
@@ -76,8 +76,8 @@ export default {
     position: relative;
   }
   .home-content{
-    width: 900px;
-    height: 600px;
+    width: 1080px;
+    height: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -90,7 +90,7 @@ export default {
   .sidebar{
     width: 80px;
     height: 100%;
-    background-color:#545c64;
+    background-color:#000;
     padding-top: 10px;
   }
   .useImg{
