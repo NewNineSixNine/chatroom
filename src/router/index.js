@@ -8,6 +8,7 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'Home',
+    redirect: '/chat',
     component: Home,
     children: [
       {

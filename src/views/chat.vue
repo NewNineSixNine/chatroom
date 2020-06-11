@@ -10,17 +10,137 @@
           </el-form-item>
         </el-form>
       </div>
-      <div class="chat-message-list">
-        <div class="chat-message-top">
-          <div class="chat-message-top-img">
-            <img src="../assets/logo.png">
+      <div class="chat-message">
+        <div class="chat-message-list">
+          <div class="chat-message-top">
+            <div class="chat-message-top-name">
+              <div class="chat-message-top-img">
+                <img src="../assets/logo.png">
+              </div>
+              <div class="chat-message-top-information">
+                <p class="username">Donald Jonhnson</p>
+                <p class="ol">online</p>
+              </div>
+            </div>
+            <div class="chat-message-top-time">
+              3h ago
+            </div>
           </div>
-          <div class="chat-message-top-name">
-            <p class="username">Donald Jonhnson</p>
-            <p class="ol">online</p>
+          <div class="chat-message-bottom">
+            <div class="chat-message-bottom-information">
+              Analysls of foreign experience, as it is common in your face
+            </div>
+            <div class="chat-message-bottom-bages">11</div>
           </div>
-          <div class="chat-message-top-time">
-            3h ago
+        </div>
+        <div class="chat-message-list">
+          <div class="chat-message-top">
+            <div class="chat-message-top-name">
+              <div class="chat-message-top-img">
+                <img src="../assets/logo.png">
+              </div>
+              <div class="chat-message-top-information">
+                <p class="username">Donald Jonhnson</p>
+                <p class="ol">online</p>
+              </div>
+            </div>
+            <div class="chat-message-top-time">
+              3h ago
+            </div>
+          </div>
+          <div class="chat-message-bottom">
+            <div class="chat-message-bottom-information">
+              Analysls of foreign experience, as it is common in your face
+            </div>
+            <div class="chat-message-bottom-bages">11</div>
+          </div>
+        </div>
+        <div class="chat-message-list">
+          <div class="chat-message-top">
+            <div class="chat-message-top-name">
+              <div class="chat-message-top-img">
+                <img src="../assets/logo.png">
+              </div>
+              <div class="chat-message-top-information">
+                <p class="username">Donald Jonhnson</p>
+                <p class="ol">online</p>
+              </div>
+            </div>
+            <div class="chat-message-top-time">
+              3h ago
+            </div>
+          </div>
+          <div class="chat-message-bottom">
+            <div class="chat-message-bottom-information">
+              Analysls of foreign experience, as it is common in your face
+            </div>
+            <div class="chat-message-bottom-bages">11</div>
+          </div>
+        </div>
+        <div class="chat-message-list">
+          <div class="chat-message-top">
+            <div class="chat-message-top-name">
+              <div class="chat-message-top-img">
+                <img src="../assets/logo.png">
+              </div>
+              <div class="chat-message-top-information">
+                <p class="username">Donald Jonhnson</p>
+                <p class="ol">online</p>
+              </div>
+            </div>
+            <div class="chat-message-top-time">
+              3h ago
+            </div>
+          </div>
+          <div class="chat-message-bottom">
+            <div class="chat-message-bottom-information">
+              Analysls of foreign experience, as it is common in your face
+            </div>
+            <div class="chat-message-bottom-bages">11</div>
+          </div>
+        </div>
+        <div class="chat-message-list">
+          <div class="chat-message-top">
+            <div class="chat-message-top-name">
+              <div class="chat-message-top-img">
+                <img src="../assets/logo.png">
+              </div>
+              <div class="chat-message-top-information">
+                <p class="username">Donald Jonhnson</p>
+                <p class="ol">online</p>
+              </div>
+            </div>
+            <div class="chat-message-top-time">
+              3h ago
+            </div>
+          </div>
+          <div class="chat-message-bottom">
+            <div class="chat-message-bottom-information">
+              Analysls of foreign experience, as it is common in your face
+            </div>
+            <div class="chat-message-bottom-bages">11</div>
+          </div>
+        </div>
+        <div class="chat-message-list">
+          <div class="chat-message-top">
+            <div class="chat-message-top-name">
+              <div class="chat-message-top-img">
+                <img src="../assets/logo.png">
+              </div>
+              <div class="chat-message-top-information">
+                <p class="username">Donald Jonhnson</p>
+                <p class="ol">online</p>
+              </div>
+            </div>
+            <div class="chat-message-top-time">
+              3h ago
+            </div>
+          </div>
+          <div class="chat-message-bottom">
+            <div class="chat-message-bottom-information">
+              Analysls of foreign experience, as it is common in your face
+            </div>
+            <div class="chat-message-bottom-bages">11</div>
           </div>
         </div>
       </div>
@@ -65,7 +185,7 @@ export default {
   height: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .chat-search .search-input{
   width: 260px;
@@ -82,19 +202,44 @@ export default {
   width: 30px;
   height: 30px;
 }
-
+.chat-message{
+  width: 100%;
+  height: calc(100% - 95px);
+  overflow: scroll;
+}
 .chat-message-list{
   width: 100%;
-  height: 100px;
+  height: 120px;
   background-color: #555;
-  padding: 20px 10px;
+  padding: 20px 20px;
   box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 .chat-message-top{
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content:space-between;
+}
+.chat-message-top-name{
+  width: 170px;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.chat-message-top-information{
+
+}
+.chat-message-top-information .name{
+  font-size: 12px;
+  font-weight: 800;
+}
+.chat-message-top-information .ol{
+  font-size: 12px;
+  color: lightgray;
 }
 .chat-message-top-img{
   width: 35px;
@@ -106,24 +251,40 @@ export default {
 .chat-message-top-img img{
   width: 100%;
 }
-.chat-message-top-name{
-  color: #fff;
-  text-align: left;
-  margin-left: -10px;
-}
-.chat-message-top-name .name{
-  font-size: 12px;
-  font-weight: 800;
-}
-.chat-message-top-name .ol{
-  font-size: 12px;
-  color: lightgray;
-}
+
 .chat-message-top-time{
   color: lightgray;
   font-size: 12px;
 }
-
+.chat-message-bottom{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.chat-message-bottom-information{
+  width: 210px;
+  font-size: 8px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #fff;
+  line-height: 40px;
+  /* padding-left: 20px; */
+  /* box-sizing: border-box; */
+}
+.chat-message-bottom-bages{
+  width: 30px;
+  height: 30px;
+  background: #040;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 5px;
+  box-shadow: 0px 0px 20px 10px rgba(1, 60, 1, 0.4);
+}
 .chat-content{
   width: 100%;
   height: 100%;
