@@ -11,6 +11,10 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar{
+
+  display:none;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

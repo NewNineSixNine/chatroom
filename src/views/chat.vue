@@ -11,136 +11,26 @@
         </el-form>
       </div>
       <div class="chat-message">
-        <div class="chat-message-list">
+        <div class="chat-message-list" v-for="(item,index) in form" :key="index">
           <div class="chat-message-top">
             <div class="chat-message-top-name">
               <div class="chat-message-top-img">
                 <img src="../assets/logo.png">
               </div>
               <div class="chat-message-top-information">
-                <p class="username">Donald Jonhnson</p>
-                <p class="ol">online</p>
+                <p class="username">{{item.name}}</p>
+                <p class="ol">{{item.status}}</p>
               </div>
             </div>
             <div class="chat-message-top-time">
-              3h ago
+              {{item.time}}
             </div>
           </div>
           <div class="chat-message-bottom">
             <div class="chat-message-bottom-information">
-              Analysls of foreign experience, as it is common in your face
+              {{item.xiaoxi}}
             </div>
-            <div class="chat-message-bottom-bages">11</div>
-          </div>
-        </div>
-        <div class="chat-message-list">
-          <div class="chat-message-top">
-            <div class="chat-message-top-name">
-              <div class="chat-message-top-img">
-                <img src="../assets/logo.png">
-              </div>
-              <div class="chat-message-top-information">
-                <p class="username">Donald Jonhnson</p>
-                <p class="ol">online</p>
-              </div>
-            </div>
-            <div class="chat-message-top-time">
-              3h ago
-            </div>
-          </div>
-          <div class="chat-message-bottom">
-            <div class="chat-message-bottom-information">
-              Analysls of foreign experience, as it is common in your face
-            </div>
-            <div class="chat-message-bottom-bages">11</div>
-          </div>
-        </div>
-        <div class="chat-message-list">
-          <div class="chat-message-top">
-            <div class="chat-message-top-name">
-              <div class="chat-message-top-img">
-                <img src="../assets/logo.png">
-              </div>
-              <div class="chat-message-top-information">
-                <p class="username">Donald Jonhnson</p>
-                <p class="ol">online</p>
-              </div>
-            </div>
-            <div class="chat-message-top-time">
-              3h ago
-            </div>
-          </div>
-          <div class="chat-message-bottom">
-            <div class="chat-message-bottom-information">
-              Analysls of foreign experience, as it is common in your face
-            </div>
-            <div class="chat-message-bottom-bages">11</div>
-          </div>
-        </div>
-        <div class="chat-message-list">
-          <div class="chat-message-top">
-            <div class="chat-message-top-name">
-              <div class="chat-message-top-img">
-                <img src="../assets/logo.png">
-              </div>
-              <div class="chat-message-top-information">
-                <p class="username">Donald Jonhnson</p>
-                <p class="ol">online</p>
-              </div>
-            </div>
-            <div class="chat-message-top-time">
-              3h ago
-            </div>
-          </div>
-          <div class="chat-message-bottom">
-            <div class="chat-message-bottom-information">
-              Analysls of foreign experience, as it is common in your face
-            </div>
-            <div class="chat-message-bottom-bages">11</div>
-          </div>
-        </div>
-        <div class="chat-message-list">
-          <div class="chat-message-top">
-            <div class="chat-message-top-name">
-              <div class="chat-message-top-img">
-                <img src="../assets/logo.png">
-              </div>
-              <div class="chat-message-top-information">
-                <p class="username">Donald Jonhnson</p>
-                <p class="ol">online</p>
-              </div>
-            </div>
-            <div class="chat-message-top-time">
-              3h ago
-            </div>
-          </div>
-          <div class="chat-message-bottom">
-            <div class="chat-message-bottom-information">
-              Analysls of foreign experience, as it is common in your face
-            </div>
-            <div class="chat-message-bottom-bages">11</div>
-          </div>
-        </div>
-        <div class="chat-message-list">
-          <div class="chat-message-top">
-            <div class="chat-message-top-name">
-              <div class="chat-message-top-img">
-                <img src="../assets/logo.png">
-              </div>
-              <div class="chat-message-top-information">
-                <p class="username">Donald Jonhnson</p>
-                <p class="ol">online</p>
-              </div>
-            </div>
-            <div class="chat-message-top-time">
-              3h ago
-            </div>
-          </div>
-          <div class="chat-message-bottom">
-            <div class="chat-message-bottom-information">
-              Analysls of foreign experience, as it is common in your face
-            </div>
-            <div class="chat-message-bottom-bages">11</div>
+            <div class="chat-message-bottom-bages">{{item.tiaoshu}}</div>
           </div>
         </div>
       </div>
@@ -153,9 +43,57 @@
 export default {
   data() {
     return {
-      form: {
-        name: ''
-      }
+      form: [
+        {
+          name: 'Donald Jonhnson',
+          status: "online",
+          time: "3h ago",
+          xiaoxi: "Analysls of foreign experience, as it is common in your face",
+          tiaoshu: 11
+        },
+        {
+          name: 'Donald Jonhnson',
+          status: "online",
+          time: "3h ago",
+          xiaoxi: "Analysls of foreign experience, as it is common in your face",
+          tiaoshu: 11
+        },
+        {
+          name: 'Donald Jonhnson',
+          status: "online",
+          time: "3h ago",
+          xiaoxi: "Analysls of foreign experience, as it is common in your face",
+          tiaoshu: 11
+        },
+        {
+          name: 'Donald Jonhnson',
+          status: "online",
+          time: "3h ago",
+          xiaoxi: "Analysls of foreign experience, as it is common in your face",
+          tiaoshu: 11
+        },
+        {
+          name: 'Donald Jonhnson',
+          status: "online",
+          time: "3h ago",
+          xiaoxi: "Analysls of foreign experience, as it is common in your face",
+          tiaoshu: 11
+        },
+        {
+          name: 'Donald Jonhnson',
+          status: "online",
+          time: "3h ago",
+          xiaoxi: "Analysls of foreign experience, as it is common in your face",
+          tiaoshu: 11
+        },
+        {
+          name: 'Donald Jonhnson',
+          status: "online",
+          time: "3h ago",
+          xiaoxi: "Analysls of foreign experience, as it is common in your face",
+          tiaoshu: 11
+        }
+      ]
     }
   }
 }
@@ -204,8 +142,8 @@ export default {
 }
 .chat-message{
   width: 100%;
-  height: calc(100% - 95px);
-  overflow: scroll;
+  height: calc(100% - 150px);
+  overflow: auto;
 }
 .chat-message-list{
   width: 100%;
