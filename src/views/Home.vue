@@ -76,7 +76,7 @@ export default {
     position: relative;
   }
   .home-content{
-    width: 1080px;
+    width: 1200px;
     height: 700px;
     position: absolute;
     top: 50%;
@@ -91,7 +91,8 @@ export default {
     width: 80px;
     height: 100%;
     background-color:#000;
-    padding-top: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
   }
   .useImg{
     width: 40px;
