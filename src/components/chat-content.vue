@@ -203,6 +203,15 @@ export default {
         font-size: 25px;
         color: #ffffff;
     }
+    .el-button{
+        padding: 0;
+    }
+    .operat-button:hover{
+        background: transparent;
+    }
+    .operat-button:focus{
+        background: transparent;
+    }
     .info{
         width: 100%;
         height: 540px;
@@ -244,6 +253,7 @@ export default {
         text-align: left;
     }
     .you{
+        text-align: left;
         transform: rotateY(180deg);
       -ms-transform:rotateY(180deg); 
       -moz-transform:rotateY(180deg);
@@ -252,7 +262,6 @@ export default {
     }
     .you span{
         display: block;
-        text-align: right;
         transform: rotateY(180deg);
       -ms-transform:rotateY(180deg); 
       -moz-transform:rotateY(180deg);

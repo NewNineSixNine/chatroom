@@ -23,7 +23,7 @@ export default {
       list: [
         {
           name: 'Donald Jonhnson',
-          imgurl:"/static/userOne.jpg",
+          imgurl:"/static/userOne.png",
           status: "online",
           time: "3h ago",
           xiaoxi: "Analysls of foreign experience, as it is common in your face",
@@ -31,7 +31,7 @@ export default {
         },
         {
           name: 'Donald Jonhnson',
-          imgurl:"/static/userTwo.jpg",
+          imgurl:"/static/userTwo.png",
           status: "online",
           time: "3h ago",
           xiaoxi: "Analysls of foreign experience, as it is common in your face",
@@ -39,7 +39,7 @@ export default {
         },
         {
           name: 'Donald Jonhnson',
-          imgurl:"/static/userThree.jpg",
+          imgurl:"/static/userThree.png",
           status: "online",
           time: "3h ago",
           xiaoxi: "Analysls of foreign experience, as it is common in your face",
@@ -47,7 +47,7 @@ export default {
         },
         {
           name: 'Donald Jonhnson',
-          imgurl:"/static/userOne.jpg",
+          imgurl:"/static/userOne.png",
           status: "online",
           time: "3h ago",
           xiaoxi: "Analysls of foreign experience, as it is common in your face",
@@ -55,7 +55,7 @@ export default {
         },
         {
           name: 'Donald Jonhnson',
-          imgurl:"/static/userOne.jpg",
+          imgurl:"/static/userOne.png",
           status: "online",
           time: "3h ago",
           xiaoxi: "Analysls of foreign experience, as it is common in your face",
@@ -63,7 +63,7 @@ export default {
         },
         {
           name: 'Donald Jonhnson',
-          imgurl:"/static/userOne.jpg",
+          imgurl:"/static/userOne.png",
           status: "online",
           time: "3h ago",
           xiaoxi: "Analysls of foreign experience, as it is common in your face",
@@ -71,7 +71,7 @@ export default {
         },
         {
           name: 'Donald Jonhnson',
-          imgurl:"/static/userOne.jpg",
+          imgurl:"/static/userOne.png",
           status: "online",
           time: "3h ago",
           xiaoxi: "Analysls of foreign experience, as it is common in your face",
